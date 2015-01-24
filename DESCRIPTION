@@ -1,0 +1,11 @@
+Package: onlineBayesChangepoint
+Title: R package for online bayesian changepoint detection, based on eponymous paper by Adams and MacKay. 
+Version: 0.1
+Authors@R: "Tim Kaye <timothy.kaye@pomona.edu> [cre, aut]"
+Description: This R package does bayesian online changepoint detection using the algorithm outlined in Adams and Mackay (2008). 
+  The algorithm takes in a time series object, and returns an S3 object containing the probabilistic changepoint locations, and other 
+  attributes. This function assumes that the data is normally distributed, as it uses the normal inverse-gamma distribution as the prior distribution. 
+Depends: R (>= 3.1.2)
+License: MIT
+LazyData: true
+Imports: ggplot2
