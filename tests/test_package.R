@@ -1,4 +1,4 @@
 library(testthat)
-library(online_bayes_changepoint)
+library(onlineBayesChangepoint)
 
-test_package(online_bayes_changepoint)
+test_package(onlineBayesChangepoint)

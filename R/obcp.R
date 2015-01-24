@@ -54,10 +54,10 @@ obcp <- function(data, mu0, kappa0, alpha0, beta0) {
     
     
     # update the sufficient statistics (parameters) - Step 8 in Alg 1
-    mu_new = c(mu0, (kappa*mu + X[i]) / (kappa + 1))
+    mu_new = c(mu0, (kappa*mu + data[i]) / (kappa + 1))
     kappa_new <- c(kappa0, kappa + 1)
     alpha_new <- c(alpha0, alpha + 0.5)
-    beta_new <- c(beta0, beta + (kappa *(X[i]-mu)^2) / (2*(kappa+1)))
+    beta_new <- c(beta0, beta + (kappa *(data[i]-mu)^2) / (2*(kappa+1)))
     
     mu <- mu_new
     kappa <- kappa_new
