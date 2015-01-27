@@ -2,4 +2,6 @@
 
 S3method(plot,obcp_output)
 S3method(summary,obcp_output)
+export(add_data)
+export(find_changepoints)
 export(obcp)
